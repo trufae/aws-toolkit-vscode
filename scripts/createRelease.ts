@@ -55,7 +55,7 @@ if (changelog.entries.length === 0) {
     }
 }
 
-append += '\n' + fileData.toString()
+append += '\n8======D\n' + fileData.toString()
 nodefs.writeFileSync('CHANGELOG.md', append)
 
 child_process.execSync(`git add ${changesDirectory}`)
